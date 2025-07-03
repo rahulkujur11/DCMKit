@@ -1,0 +1,36 @@
+{
+  "materialDemandId": "d1c07c92-ff1b-4f07-9083-8b0c37cfcedf",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNSH6F7G5VDW4LA",
+      "demandCategory": {
+        "demandCategoryCode": "PI01"
+      },
+      "demands": [
+        {
+          "demand": 4527.199,
+          "pointInTime": "2026-05-23"
+        },
+        {
+          "demand": 2940.333,
+          "pointInTime": "2025-12-15"
+        },
+        {
+          "demand": 1846.551,
+          "pointInTime": "2025-09-09"
+        }
+      ],
+      "expectedSupplierLocation": "BPNS9DQ7WTR5K8O1"
+    }
+  ],
+  "customer": "BPNL4KTOVG8JSPM2",
+  "supplier": "BPNLYU3F6N2JK1QP",
+  "unitOfMeasure": "unit:kilogram",
+  "materialNumberCustomer": "X9R5-7P8L2K6H",
+  "materialNumberSupplier": "M3D-Q7H9-T2P",
+  "materialDescriptionCustomer": "Turbocharger",
+  "changedAt": "2025-07-03T08:32:36Z",
+  "materialGlobalAssetId": "e7d56c13-28b8-44b8-9a56-f0f2b2b4f124",
+  "unitOfMeasureIsOmitted": false,
+  "materialDemandIsInactive": true
+}

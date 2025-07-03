@@ -1,0 +1,40 @@
+{
+  "materialDemandId": "4339cb24-ef4a-45c4-9be5-960f7a3a69f8",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNSX67L0OS7AGJ3",
+      "demandCategory": {
+        "demandCategoryCode": "SR99"
+      },
+      "demands": [
+        {
+          "demand": 3118.695,
+          "pointInTime": "2025-07-21"
+        },
+        {
+          "demand": 1044.113,
+          "pointInTime": "2026-02-08"
+        },
+        {
+          "demand": 1774.626,
+          "pointInTime": "2025-10-17"
+        },
+        {
+          "demand": 653.107,
+          "pointInTime": "2025-11-28"
+        }
+      ],
+      "expectedSupplierLocation": "BPNSGRYNPMV0BT0B"
+    }
+  ],
+  "customer": "BPNLDESNZXR1S5HK",
+  "supplier": "BPNLOMG0PLDKW8V0",
+  "unitOfMeasure": "unit:set",
+  "materialNumberCustomer": "3QFTMRV2UO5N",
+  "materialNumberSupplier": "2I4VU5VR8-G3",
+  "materialDescriptionCustomer": "LED headlight assembly",
+  "changedAt": "2025-07-03T08:32:36Z",
+  "materialGlobalAssetId": "f83ace80-479e-470e-8677-0a1d0f8ad1d6",
+  "unitOfMeasureIsOmitted": false,
+  "materialDemandIsInactive": false
+}

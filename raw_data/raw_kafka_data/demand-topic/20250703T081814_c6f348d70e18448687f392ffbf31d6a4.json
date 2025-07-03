@@ -1,0 +1,49 @@
+{
+  "materialDemandId": "e3b0c442-98fc-4f2d-95ed-c4476f1b5abc",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNS123456789012",
+      "demandCategory": {
+        "demandCategoryCode": "0001"
+      },
+      "demands": [
+        {
+          "demand": 1200.5,
+          "pointInTime": "2025-07-07"
+        },
+        {
+          "demand": 1350.0,
+          "pointInTime": "2025-07-14"
+        }
+      ],
+      "expectedSupplierLocation": "BPNS987654321098"
+    },
+    {
+      "customerLocation": "BPNS223344556677",
+      "demandCategory": {
+        "demandCategoryCode": "A1S1"
+      },
+      "demands": [
+        {
+          "demand": 50.75,
+          "pointInTime": "2025-07-07"
+        },
+        {
+          "demand": 60.2,
+          "pointInTime": "2025-07-14"
+        }
+      ],
+      "expectedSupplierLocation": "BPNS889977665544"
+    }
+  ],
+  "customer": "BPNL1234567890AB",
+  "supplier": "BPNL0987654321CD",
+  "materialNumberCustomer": "MAT-001-CUST",
+  "materialNumberSupplier": "MAT-001-SUPP",
+  "materialDescriptionCustomer": "High-performance brake pads",
+  "changedAt": "2025-07-03T10:15:30Z",
+  "unitOfMeasure": "unit:piece",
+  "unitOfMeasureIsOmitted": false,
+  "materialDemandIsInactive": false,
+  "materialGlobalAssetId": "9b1deb4d-1b46-4f3c-9c97-89f1d2d8b712"
+}

@@ -1,0 +1,47 @@
+{
+  "materialDemandId": "9adfe165-8f12-4351-b798-d65b76a6ed79",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNSZB0RPYKNOCLW",
+      "demandCategory": {
+        "demandCategoryCode": "PO01"
+      },
+      "demands": [
+        {
+          "demand": 742.467,
+          "pointInTime": "2025-07-01"
+        },
+        {
+          "demand": 1885.501,
+          "pointInTime": "2025-08-05"
+        },
+        {
+          "demand": 3447.567,
+          "pointInTime": "2025-08-12"
+        }
+      ],
+      "expectedSupplierLocation": "BPNSSSWV2YTNHKCC"
+    },
+    {
+      "customerLocation": "BPNS72BSI8GKSE1K",
+      "demandCategory": {
+        "demandCategoryCode": "OS01"
+      },
+      "demands": [
+        {
+          "demand": 2084.804,
+          "pointInTime": "2025-08-19"
+        }
+      ],
+      "expectedSupplierLocation": "BPNS4AT778MXG16V"
+    }
+  ],
+  "customer": "BPNLNDC8VGOI8376",
+  "supplier": "BPNL6BIKN3PVM14U",
+  "materialNumberCustomer": "MAT-680-CUST",
+  "materialNumberSupplier": "MAT-639-SUPP",
+  "materialDescriptionCustomer": "Sample material description 44",
+  "changedAt": "2025-07-03T08:17:50.644496Z",
+  "unitOfMeasureIsOmitted": true,
+  "materialDemandIsInactive": true
+}

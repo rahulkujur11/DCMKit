@@ -1,0 +1,36 @@
+{
+  "materialDemandId": "e2c4f9b0-9fa6-4a6d-bd2d-ef52be77b299",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNSL39J29HDQH9G",
+      "demandCategory": {
+        "demandCategoryCode": "ED01"
+      },
+      "demands": [
+        {
+          "demand": 2765.004,
+          "pointInTime": "2026-04-15"
+        },
+        {
+          "demand": 1345.821,
+          "pointInTime": "2025-11-11"
+        },
+        {
+          "demand": 1998.322,
+          "pointInTime": "2025-10-04"
+        }
+      ],
+      "expectedSupplierLocation": "BPNSNGQV2BX3Z6RS"
+    }
+  ],
+  "customer": "BPNLDHX73B9Z2RXW",
+  "supplier": "BPNLB1PQJ0X2C3TS",
+  "unitOfMeasure": "unit:piece",
+  "materialNumberCustomer": "DZ1R-9F3H27L8",
+  "materialNumberSupplier": "PH8-4NV6-X5C",
+  "materialDescriptionCustomer": "Alternator",
+  "changedAt": "2025-07-03T08:32:36Z",
+  "materialGlobalAssetId": "7c0b1201-f87c-4b86-ae6a-d31ecb25a4a9",
+  "unitOfMeasureIsOmitted": false,
+  "materialDemandIsInactive": false
+}

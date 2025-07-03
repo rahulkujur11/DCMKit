@@ -1,0 +1,32 @@
+{
+  "materialDemandId": "123e4567-e89b-12d3-a456-426614174000",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNS1234567890AB",
+      "demandCategory": {
+        "demandCategoryCode": "0001"
+      },
+      "demands": [
+        {
+          "demand": 1500.75,
+          "pointInTime": "2025-07-07"
+        },
+        {
+          "demand": 2000.5,
+          "pointInTime": "2025-07-14"
+        }
+      ],
+      "expectedSupplierLocation": "BPNS0987654321CD"
+    }
+  ],
+  "customer": "BPNL1234567890XY",
+  "supplier": "BPNL0987654321ZW",
+  "unitOfMeasure": "unit:piece",
+  "materialNumberCustomer": "ABC-123-XYZ",
+  "materialNumberSupplier": "SUP-987-PLM",
+  "materialDescriptionCustomer": "High performance brake pad",
+  "changedAt": "2025-07-03T12:34:56Z",
+  "materialGlobalAssetId": "987e6543-e21b-32d3-b456-426655443211",
+  "unitOfMeasureIsOmitted": false,
+  "materialDemandIsInactive": false
+}

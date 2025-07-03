@@ -1,0 +1,36 @@
+{
+  "materialDemandId": "7db67403-bf03-42f3-9a3f-3a5c4fef401b",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNSK6YV4HQP2M9N",
+      "demandCategory": {
+        "demandCategoryCode": "A1S1"
+      },
+      "demands": [
+        {
+          "demand": 415.126,
+          "pointInTime": "2025-08-29"
+        },
+        {
+          "demand": 920.309,
+          "pointInTime": "2025-09-14"
+        },
+        {
+          "demand": 768.554,
+          "pointInTime": "2025-10-05"
+        }
+      ],
+      "expectedSupplierLocation": "BPNSRH2D8JY4QCKG"
+    }
+  ],
+  "customer": "BPNLX94ZW8VNT2RM",
+  "supplier": "BPNLT74H8PXV3Y1N",
+  "unitOfMeasure": "unit:hourUnitOfTime",
+  "materialNumberCustomer": "Y5D8-1Z6E9Q3H",
+  "materialNumberSupplier": "W4K-M2P7-R5J",
+  "materialDescriptionCustomer": "Battery",
+  "changedAt": "2025-07-03T08:32:36Z",
+  "materialGlobalAssetId": "c8a972e3-19df-4802-ace8-faf8122b90bb",
+  "unitOfMeasureIsOmitted": true,
+  "materialDemandIsInactive": true
+}

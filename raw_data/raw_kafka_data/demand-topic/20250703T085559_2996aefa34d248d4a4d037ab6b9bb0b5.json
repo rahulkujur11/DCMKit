@@ -1,0 +1,32 @@
+{
+  "materialDemandId": "aa428ea6-52cf-4f13-b98c-7807f0f6a5c8",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNSB3YWOJWQG5J9",
+      "demandCategory": {
+        "demandCategoryCode": "PI01"
+      },
+      "demands": [
+        {
+          "demand": 832.567,
+          "pointInTime": "2025-08-07"
+        },
+        {
+          "demand": 1937.418,
+          "pointInTime": "2025-12-29"
+        }
+      ],
+      "expectedSupplierLocation": "BPNSG8OYJL7P7H7H"
+    }
+  ],
+  "customer": "BPNLKFNQPS6YM0L0",
+  "supplier": "BPNLSHZK6W9EK3PJ",
+  "unitOfMeasure": "unit:litre",
+  "materialNumberCustomer": "H73E-4T8POH6G",
+  "materialNumberSupplier": "MMX-Q3V8-T2H",
+  "materialDescriptionCustomer": "Turbocharger",
+  "changedAt": "2025-07-03T08:32:36Z",
+  "materialGlobalAssetId": "bf152a9c-174c-4c7c-b2f3-ef1b57c6d6b8",
+  "unitOfMeasureIsOmitted": false,
+  "materialDemandIsInactive": true
+}

@@ -1,0 +1,394 @@
+2025-07-03 10:18:02,173 [INFO] Callback Server Starting
+2025-07-03 10:18:02,173 [INFO] Socket listening on ('127.0.0.1', 41073)
+2025-07-03 10:18:06,391 [INFO] Python Server ready to receive messages
+2025-07-03 10:18:06,391 [INFO] Received command c on object id p0
+2025-07-03 10:18:06,395 [INFO] Processing batch 116
+2025-07-03 10:18:08,766 [INFO] write_layer: Starting write operation...
+2025-07-03 10:18:08,766 [INFO] Detected demand data.
+2025-07-03 10:18:09,115 [INFO] Writing data with partitions: ['materialDemandId', 'pointInTime']
+2025-07-03 10:18:22,544 [INFO] ✅ Data write completed.
+2025-07-03 10:18:22,545 [INFO] Bronze written for demand-topic
+2025-07-03 10:18:23,289 [INFO] write_layer: Starting write operation...
+2025-07-03 10:18:23,289 [INFO] Detected demand data.
+2025-07-03 10:18:23,324 [INFO] Writing data with partitions: ['materialDemandId', 'pointInTime']
+2025-07-03 10:18:27,828 [INFO] ✅ Data write completed.
+2025-07-03 10:18:27,828 [INFO] Silver written for demand-topic
+2025-07-03 10:18:27,828 [INFO] ✨ Reading Silver layer for demand-topic
+2025-07-03 10:18:28,389 [INFO] 🔧 Starting transform_demand_gold...
+2025-07-03 10:18:28,506 [INFO] ⏳ Generating DimTime from pointInTime values...
+2025-07-03 10:18:29,210 [INFO] ✅ DimTime generated with 4 rows
+2025-07-03 10:18:29,210 [INFO] 📦 Merging Dimension table DimMaterial with SCD Type 2 logic.
+2025-07-03 10:18:29,210 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:18:29,397 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:18:29,399 [WARNING] ⚠️ Existing table missing 'SurrogateKey', adding default column.
+2025-07-03 10:18:29,407 [WARNING] ⚠️ Existing table missing 'ValidFrom', adding default column.
+2025-07-03 10:18:29,418 [WARNING] ⚠️ Existing table missing 'ValidTo', adding default column.
+2025-07-03 10:18:29,429 [WARNING] ⚠️ Existing table missing 'IsCurrent', adding default column.
+2025-07-03 10:18:29,449 [INFO] 📦 Updating Delta table schema at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial to include SCD columns.
+2025-07-03 10:18:32,436 [INFO] 📌 Change detection columns: ['MaterialDescription', 'MaterialGlobalAssetId', 'UnitOfMeasure', 'UnitOfMeasureIsOmitted']
+2025-07-03 10:18:32,470 [INFO] 🔁 MERGE condition: existing.MaterialNumberCustomer = incoming.MaterialNumberCustomer AND existing.MaterialNumberSupplier = incoming.MaterialNumberSupplier
+2025-07-03 10:18:36,798 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:18:36,798 [INFO] 📦 Merging Dimension table DimCustomer with SCD Type 2 logic.
+2025-07-03 10:18:36,798 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:18:36,920 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:18:36,921 [WARNING] ⚠️ Existing table missing 'SurrogateKey', adding default column.
+2025-07-03 10:18:36,928 [WARNING] ⚠️ Existing table missing 'ValidFrom', adding default column.
+2025-07-03 10:18:36,934 [WARNING] ⚠️ Existing table missing 'ValidTo', adding default column.
+2025-07-03 10:18:36,941 [WARNING] ⚠️ Existing table missing 'IsCurrent', adding default column.
+2025-07-03 10:18:36,945 [INFO] 📦 Updating Delta table schema at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer to include SCD columns.
+2025-07-03 10:18:39,275 [INFO] 📌 Change detection columns: []
+2025-07-03 10:18:39,297 [INFO] 🔁 MERGE condition: existing.CustomerBPNL = incoming.CustomerBPNL
+2025-07-03 10:18:43,861 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:18:43,861 [INFO] 📦 Merging Dimension table DimSupplier with SCD Type 2 logic.
+2025-07-03 10:18:43,861 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:18:43,963 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:18:43,965 [WARNING] ⚠️ Existing table missing 'SurrogateKey', adding default column.
+2025-07-03 10:18:43,970 [WARNING] ⚠️ Existing table missing 'ValidFrom', adding default column.
+2025-07-03 10:18:43,976 [WARNING] ⚠️ Existing table missing 'ValidTo', adding default column.
+2025-07-03 10:18:43,982 [WARNING] ⚠️ Existing table missing 'IsCurrent', adding default column.
+2025-07-03 10:18:43,986 [INFO] 📦 Updating Delta table schema at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier to include SCD columns.
+2025-07-03 10:18:46,294 [INFO] 📌 Change detection columns: []
+2025-07-03 10:18:46,307 [INFO] 🔁 MERGE condition: existing.SupplierBPNL = incoming.SupplierBPNL
+2025-07-03 10:18:48,928 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:18:48,928 [INFO] 📦 Merging Dimension table DimDemandCategory with SCD Type 2 logic.
+2025-07-03 10:18:48,928 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:18:49,025 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:18:49,026 [WARNING] ⚠️ Existing table missing 'SurrogateKey', adding default column.
+2025-07-03 10:18:49,031 [WARNING] ⚠️ Existing table missing 'ValidFrom', adding default column.
+2025-07-03 10:18:49,037 [WARNING] ⚠️ Existing table missing 'ValidTo', adding default column.
+2025-07-03 10:18:49,043 [WARNING] ⚠️ Existing table missing 'IsCurrent', adding default column.
+2025-07-03 10:18:49,046 [INFO] 📦 Updating Delta table schema at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory to include SCD columns.
+2025-07-03 10:18:51,241 [INFO] 📌 Change detection columns: []
+2025-07-03 10:18:51,256 [INFO] 🔁 MERGE condition: existing.DemandCategoryCode = incoming.DemandCategoryCode
+2025-07-03 10:18:53,787 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:18:53,787 [INFO] 💾 Writing Fact table: FactMaterialDemand
+2025-07-03 10:18:56,585 [INFO] 📦 Merging Dimension table DimTime with SCD Type 2 logic.
+2025-07-03 10:18:56,585 [WARNING] ⚠️ Unknown dimension DimTime. Skipping SCD merge.
+2025-07-03 10:18:56,585 [INFO] 💾 Writing Gold table: DimMaterial | Partitions: []
+2025-07-03 10:18:59,387 [INFO] ✅ Gold table DimMaterial written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:19:00,314 [INFO] 
++--------------------+---------------------+----------------------+----------------------+-------------+----------------------+
+| MaterialDescription|MaterialGlobalAssetId|MaterialNumberCustomer|MaterialNumberSupplier|UnitOfMeasure|UnitOfMeasureIsOmitted|
++--------------------+---------------------+----------------------+----------------------+-------------+----------------------+
+|High performance ...| 987e6543-e21b-32d...|           ABC-123-XYZ|           SUP-987-PLM|   unit:piece|                 false|
+|High performance ...| 987e6543-e21b-32d...|           ABC-123-XYZ|           SUP-987-PLM|   unit:piece|                 false|
+|Windshield wiper ...|                 null|           DEF-456-UVW|                  null|         null|                  true|
+|Windshield wiper ...|                 null|           DEF-456-UVW|                  null|         null|                  true|
++--------------------+---------------------+----------------------+----------------------+-------------+----------------------+
+
+2025-07-03 10:19:00,314 [WARNING] ⚠️ Skipping partitioning for table with only partition columns: {'CustomerBPNL'}
+2025-07-03 10:19:00,314 [INFO] 💾 Writing Gold table: DimCustomer | Partitions: []
+2025-07-03 10:19:02,835 [INFO] ✅ Gold table DimCustomer written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:19:03,742 [INFO] 
++----------------+
+|    CustomerBPNL|
++----------------+
+|BPNL1234567890LM|
+|BPNL1234567890XY|
++----------------+
+
+2025-07-03 10:19:03,742 [INFO] 💾 Writing Gold table: DimSupplier | Partitions: []
+2025-07-03 10:19:06,193 [INFO] ✅ Gold table DimSupplier written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:19:06,994 [INFO] 
++----------------+
+|    SupplierBPNL|
++----------------+
+|BPNL0987654321ZW|
+|BPNL0987654321PQ|
++----------------+
+
+2025-07-03 10:19:06,994 [INFO] 💾 Writing Gold table: DimDemandCategory | Partitions: []
+2025-07-03 10:19:09,453 [INFO] ✅ Gold table DimDemandCategory written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:19:10,253 [INFO] 
++------------------+
+|DemandCategoryCode|
++------------------+
+|              A1S1|
+|              0001|
++------------------+
+
+2025-07-03 10:19:10,253 [INFO] 💾 Writing Gold table: FactMaterialDemand | Partitions: ['ChangedAt', 'PointInTime', 'CustomerBPNL']
+2025-07-03 10:19:12,573 [INFO] ✅ Gold table FactMaterialDemand written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/FactMaterialDemand
+2025-07-03 10:19:15,073 [INFO] 
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+|           ChangedAt|    CustomerBPNL|DemandCategoryCode|            DemandID|DemandQuantity|MaterialDemandIsInactive|MaterialNumberCustomer|PointInTime|    SupplierBPNL|
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+|2025-07-03T12:34:56Z|BPNL1234567890XY|              0001|123e4567-e89b-12d...|        2000.5|                   false|           ABC-123-XYZ| 2025-07-14|BPNL0987654321ZW|
+|2025-07-03T12:34:56Z|BPNL1234567890XY|              0001|123e4567-e89b-12d...|       1500.75|                   false|           ABC-123-XYZ| 2025-07-07|BPNL0987654321ZW|
+|2025-07-02T08:15:30Z|BPNL1234567890LM|              A1S1|223e4567-e89b-12d...|        750.25|                    true|           DEF-456-UVW| 2025-08-11|BPNL0987654321PQ|
+|2025-07-02T08:15:30Z|BPNL1234567890LM|              A1S1|223e4567-e89b-12d...|         500.0|                    true|           DEF-456-UVW| 2025-08-04|BPNL0987654321PQ|
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+
+2025-07-03 10:19:15,073 [INFO] 💾 Writing Gold table: DimTime | Partitions: []
+2025-07-03 10:19:17,698 [INFO] ✅ Gold table DimTime written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimTime
+2025-07-03 10:19:18,595 [INFO] 
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+| DateKey|Day|DayOfWeek|  FullDate|IsWeekend|Month|MonthName|Quarter|WeekOfYear|Year|
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+|20250707|  7|        1|2025-07-07|    false|    7|     July|      3|        28|2025|
+|20250714| 14|        1|2025-07-14|    false|    7|     July|      3|        29|2025|
+|20250804|  4|        1|2025-08-04|    false|    8|   August|      3|        32|2025|
+|20250811| 11|        1|2025-08-11|    false|    8|   August|      3|        33|2025|
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+
+2025-07-03 10:19:44,517 [INFO] Received command c on object id p0
+2025-07-03 10:19:44,520 [INFO] Processing batch 117
+2025-07-03 10:19:46,766 [INFO] write_layer: Starting write operation...
+2025-07-03 10:19:46,766 [INFO] Detected demand data.
+2025-07-03 10:19:46,799 [INFO] Writing data with partitions: ['materialDemandId', 'pointInTime']
+2025-07-03 10:19:48,953 [INFO] ✅ Data write completed.
+2025-07-03 10:19:48,953 [INFO] Bronze written for demand-topic
+2025-07-03 10:19:50,067 [INFO] write_layer: Starting write operation...
+2025-07-03 10:19:50,067 [INFO] Detected demand data.
+2025-07-03 10:19:50,093 [INFO] Writing data with partitions: ['materialDemandId', 'pointInTime']
+2025-07-03 10:19:52,131 [INFO] ✅ Data write completed.
+2025-07-03 10:19:52,131 [INFO] Silver written for demand-topic
+2025-07-03 10:19:52,131 [INFO] ✨ Reading Silver layer for demand-topic
+2025-07-03 10:19:53,267 [INFO] 🔧 Starting transform_demand_gold...
+2025-07-03 10:19:53,387 [INFO] ⏳ Generating DimTime from pointInTime values...
+2025-07-03 10:19:54,047 [INFO] ✅ DimTime generated with 14 rows
+2025-07-03 10:19:54,047 [INFO] 📦 Merging Dimension table DimMaterial with SCD Type 2 logic.
+2025-07-03 10:19:54,047 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:19:54,072 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:19:54,073 [INFO] 📌 Change detection columns: ['MaterialDescription', 'MaterialGlobalAssetId', 'UnitOfMeasure', 'UnitOfMeasureIsOmitted']
+2025-07-03 10:19:54,085 [INFO] 🔁 MERGE condition: existing.MaterialNumberCustomer = incoming.MaterialNumberCustomer AND existing.MaterialNumberSupplier = incoming.MaterialNumberSupplier
+2025-07-03 10:19:56,994 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:19:56,995 [INFO] 📦 Merging Dimension table DimCustomer with SCD Type 2 logic.
+2025-07-03 10:19:56,995 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:19:57,022 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:19:57,023 [INFO] 📌 Change detection columns: []
+2025-07-03 10:19:57,033 [INFO] 🔁 MERGE condition: existing.CustomerBPNL = incoming.CustomerBPNL
+2025-07-03 10:19:59,544 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:19:59,544 [INFO] 📦 Merging Dimension table DimSupplier with SCD Type 2 logic.
+2025-07-03 10:19:59,544 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:19:59,568 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:19:59,569 [INFO] 📌 Change detection columns: []
+2025-07-03 10:19:59,578 [INFO] 🔁 MERGE condition: existing.SupplierBPNL = incoming.SupplierBPNL
+2025-07-03 10:20:01,869 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:20:01,869 [INFO] 📦 Merging Dimension table DimDemandCategory with SCD Type 2 logic.
+2025-07-03 10:20:01,869 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:20:01,896 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:20:01,897 [INFO] 📌 Change detection columns: []
+2025-07-03 10:20:01,907 [INFO] 🔁 MERGE condition: existing.DemandCategoryCode = incoming.DemandCategoryCode
+2025-07-03 10:20:04,119 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:20:04,119 [INFO] 💾 Writing Fact table: FactMaterialDemand
+2025-07-03 10:20:06,963 [INFO] 📦 Merging Dimension table DimTime with SCD Type 2 logic.
+2025-07-03 10:20:06,963 [WARNING] ⚠️ Unknown dimension DimTime. Skipping SCD merge.
+2025-07-03 10:20:06,963 [INFO] 💾 Writing Gold table: DimMaterial | Partitions: []
+2025-07-03 10:20:08,827 [INFO] ✅ Gold table DimMaterial written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:20:09,663 [INFO] 
++--------------------+---------------------+----------------------+----------------------+-------------------+----------------------+
+| MaterialDescription|MaterialGlobalAssetId|MaterialNumberCustomer|MaterialNumberSupplier|      UnitOfMeasure|UnitOfMeasureIsOmitted|
++--------------------+---------------------+----------------------+----------------------+-------------------+----------------------+
+|LED headlight ass...| f83ace80-479e-470...|          3QFTMRV2UO5N|          2I4VU5VR8-G3|           unit:set|                 false|
+|LED headlight ass...| f83ace80-479e-470...|          3QFTMRV2UO5N|          2I4VU5VR8-G3|           unit:set|                 false|
+|LED headlight ass...| f83ace80-479e-470...|          3QFTMRV2UO5N|          2I4VU5VR8-G3|           unit:set|                 false|
+|   Engine oil filter| 8c2ad07a-b66d-45e...|          O7A6SZAQLUEG|          5SB-364W68-B|      unit:kilogram|                  true|
+|   Engine oil filter| 8c2ad07a-b66d-45e...|          O7A6SZAQLUEG|          5SB-364W68-B|      unit:kilogram|                  true|
+|LED headlight ass...| f83ace80-479e-470...|          3QFTMRV2UO5N|          2I4VU5VR8-G3|           unit:set|                 false|
+|   Engine oil filter| 8c2ad07a-b66d-45e...|          O7A6SZAQLUEG|          5SB-364W68-B|      unit:kilogram|                  true|
+|             Battery| c8a972e3-19df-480...|         Y5D8-1Z6E9Q3H|          W4K-M2P7-R5J|unit:hourUnitOfTime|                  true|
+|             Battery| c8a972e3-19df-480...|         Y5D8-1Z6E9Q3H|          W4K-M2P7-R5J|unit:hourUnitOfTime|                  true|
+|             Battery| c8a972e3-19df-480...|         Y5D8-1Z6E9Q3H|          W4K-M2P7-R5J|unit:hourUnitOfTime|                  true|
+|        Turbocharger| bf152a9c-174c-4c7...|         H73E-4T8POH6G|          MMX-Q3V8-T2H|         unit:litre|                 false|
+|        Turbocharger| bf152a9c-174c-4c7...|         H73E-4T8POH6G|          MMX-Q3V8-T2H|         unit:litre|                 false|
+|          Alternator| 7c0b1201-f87c-4b8...|         DZ1R-9F3H27L8|          PH8-4NV6-X5C|         unit:piece|                 false|
+|          Alternator| 7c0b1201-f87c-4b8...|         DZ1R-9F3H27L8|          PH8-4NV6-X5C|         unit:piece|                 false|
+|          Alternator| 7c0b1201-f87c-4b8...|         DZ1R-9F3H27L8|          PH8-4NV6-X5C|         unit:piece|                 false|
++--------------------+---------------------+----------------------+----------------------+-------------------+----------------------+
+
+2025-07-03 10:20:09,663 [WARNING] ⚠️ Skipping partitioning for table with only partition columns: {'CustomerBPNL'}
+2025-07-03 10:20:09,664 [INFO] 💾 Writing Gold table: DimCustomer | Partitions: []
+2025-07-03 10:20:11,515 [INFO] ✅ Gold table DimCustomer written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:20:12,358 [INFO] 
++----------------+
+|    CustomerBPNL|
++----------------+
+|BPNLX94ZW8VNT2RM|
+|BPNLGEDZSIW49PHS|
+|BPNLDHX73B9Z2RXW|
+|BPNLDESNZXR1S5HK|
+|BPNLKFNQPS6YM0L0|
++----------------+
+
+2025-07-03 10:20:12,358 [INFO] 💾 Writing Gold table: DimSupplier | Partitions: []
+2025-07-03 10:20:14,144 [INFO] ✅ Gold table DimSupplier written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:20:14,951 [INFO] 
++----------------+
+|    SupplierBPNL|
++----------------+
+|BPNLXJH3NKP4YL4L|
+|BPNLSHZK6W9EK3PJ|
+|BPNLT74H8PXV3Y1N|
+|BPNLOMG0PLDKW8V0|
+|BPNLB1PQJ0X2C3TS|
++----------------+
+
+2025-07-03 10:20:14,952 [INFO] 💾 Writing Gold table: DimDemandCategory | Partitions: []
+2025-07-03 10:20:18,339 [INFO] ✅ Gold table DimDemandCategory written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:20:19,127 [INFO] 
++------------------+
+|DemandCategoryCode|
++------------------+
+|              A1S1|
+|              ED01|
+|              SR99|
+|              PI01|
+|              OS01|
++------------------+
+
+2025-07-03 10:20:19,127 [INFO] 💾 Writing Gold table: FactMaterialDemand | Partitions: ['ChangedAt', 'PointInTime', 'CustomerBPNL']
+2025-07-03 10:20:21,173 [INFO] ✅ Gold table FactMaterialDemand written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/FactMaterialDemand
+2025-07-03 10:20:22,039 [INFO] 
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+|           ChangedAt|    CustomerBPNL|DemandCategoryCode|            DemandID|DemandQuantity|MaterialDemandIsInactive|MaterialNumberCustomer|PointInTime|    SupplierBPNL|
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+|2025-07-03T08:32:36Z|BPNLDESNZXR1S5HK|              SR99|4339cb24-ef4a-45c...|      1044.113|                   false|          3QFTMRV2UO5N| 2026-02-08|BPNLOMG0PLDKW8V0|
+|2025-07-03T08:32:36Z|BPNLDESNZXR1S5HK|              SR99|4339cb24-ef4a-45c...|      1774.626|                   false|          3QFTMRV2UO5N| 2025-10-17|BPNLOMG0PLDKW8V0|
+|2025-07-03T08:32:36Z|BPNLDESNZXR1S5HK|              SR99|4339cb24-ef4a-45c...|       653.107|                   false|          3QFTMRV2UO5N| 2025-11-28|BPNLOMG0PLDKW8V0|
+|2025-07-03T08:32:36Z|BPNLGEDZSIW49PHS|              OS01|72d7ed90-bf51-455...|       471.174|                   false|          O7A6SZAQLUEG| 2025-09-14|BPNLXJH3NKP4YL4L|
+|2025-07-03T08:32:36Z|BPNLGEDZSIW49PHS|              OS01|72d7ed90-bf51-455...|      4264.763|                   false|          O7A6SZAQLUEG| 2026-01-14|BPNLXJH3NKP4YL4L|
+|2025-07-03T08:32:36Z|BPNLDESNZXR1S5HK|              SR99|4339cb24-ef4a-45c...|      3118.695|                   false|          3QFTMRV2UO5N| 2025-07-21|BPNLOMG0PLDKW8V0|
+|2025-07-03T08:32:36Z|BPNLGEDZSIW49PHS|              OS01|72d7ed90-bf51-455...|      4941.611|                   false|          O7A6SZAQLUEG| 2026-02-25|BPNLXJH3NKP4YL4L|
+|2025-07-03T08:32:36Z|BPNLX94ZW8VNT2RM|              A1S1|7db67403-bf03-42f...|       415.126|                    true|         Y5D8-1Z6E9Q3H| 2025-08-29|BPNLT74H8PXV3Y1N|
+|2025-07-03T08:32:36Z|BPNLX94ZW8VNT2RM|              A1S1|7db67403-bf03-42f...|       768.554|                    true|         Y5D8-1Z6E9Q3H| 2025-10-05|BPNLT74H8PXV3Y1N|
+|2025-07-03T08:32:36Z|BPNLX94ZW8VNT2RM|              A1S1|7db67403-bf03-42f...|       920.309|                    true|         Y5D8-1Z6E9Q3H| 2025-09-14|BPNLT74H8PXV3Y1N|
+|2025-07-03T08:32:36Z|BPNLKFNQPS6YM0L0|              PI01|aa428ea6-52cf-4f1...|      1937.418|                    true|         H73E-4T8POH6G| 2025-12-29|BPNLSHZK6W9EK3PJ|
+|2025-07-03T08:32:36Z|BPNLKFNQPS6YM0L0|              PI01|aa428ea6-52cf-4f1...|       832.567|                    true|         H73E-4T8POH6G| 2025-08-07|BPNLSHZK6W9EK3PJ|
+|2025-07-03T08:32:36Z|BPNLDHX73B9Z2RXW|              ED01|e2c4f9b0-9fa6-4a6...|      1345.821|                   false|         DZ1R-9F3H27L8| 2025-11-11|BPNLB1PQJ0X2C3TS|
+|2025-07-03T08:32:36Z|BPNLDHX73B9Z2RXW|              ED01|e2c4f9b0-9fa6-4a6...|      2765.004|                   false|         DZ1R-9F3H27L8| 2026-04-15|BPNLB1PQJ0X2C3TS|
+|2025-07-03T08:32:36Z|BPNLDHX73B9Z2RXW|              ED01|e2c4f9b0-9fa6-4a6...|      1998.322|                   false|         DZ1R-9F3H27L8| 2025-10-04|BPNLB1PQJ0X2C3TS|
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+
+2025-07-03 10:20:22,039 [INFO] 💾 Writing Gold table: DimTime | Partitions: []
+2025-07-03 10:20:24,420 [INFO] ✅ Gold table DimTime written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimTime
+2025-07-03 10:20:25,350 [INFO] 
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+| DateKey|Day|DayOfWeek|  FullDate|IsWeekend|Month|MonthName|Quarter|WeekOfYear|Year|
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+|20250721| 21|        1|2025-07-21|    false|    7|     July|      3|        30|2025|
+|20250807|  7|        4|2025-08-07|    false|    8|   August|      3|        32|2025|
+|20250829| 29|        5|2025-08-29|    false|    8|   August|      3|        35|2025|
+|20250914| 14|        7|2025-09-14|     true|    9|September|      3|        37|2025|
+|20251004|  4|        6|2025-10-04|     true|   10|  October|      4|        40|2025|
+|20251005|  5|        7|2025-10-05|     true|   10|  October|      4|        40|2025|
+|20251017| 17|        5|2025-10-17|    false|   10|  October|      4|        42|2025|
+|20251111| 11|        2|2025-11-11|    false|   11| November|      4|        46|2025|
+|20251128| 28|        5|2025-11-28|    false|   11| November|      4|        48|2025|
+|20251229| 29|        1|2025-12-29|    false|   12| December|      4|         1|2025|
+|20260114| 14|        3|2026-01-14|    false|    1|  January|      1|         3|2026|
+|20260208|  8|        7|2026-02-08|     true|    2| February|      1|         6|2026|
+|20260225| 25|        3|2026-02-25|    false|    2| February|      1|         9|2026|
+|20260415| 15|        3|2026-04-15|    false|    4|    April|      2|        16|2026|
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+
+2025-07-03 10:20:46,420 [INFO] Received command c on object id p0
+2025-07-03 10:20:46,424 [INFO] Processing batch 118
+2025-07-03 10:20:47,025 [INFO] write_layer: Starting write operation...
+2025-07-03 10:20:47,025 [INFO] Detected demand data.
+2025-07-03 10:20:47,059 [INFO] Writing data with partitions: ['materialDemandId', 'pointInTime']
+2025-07-03 10:20:51,059 [INFO] ✅ Data write completed.
+2025-07-03 10:20:51,060 [INFO] Bronze written for demand-topic
+2025-07-03 10:20:51,506 [INFO] write_layer: Starting write operation...
+2025-07-03 10:20:51,506 [INFO] Detected demand data.
+2025-07-03 10:20:51,554 [INFO] Writing data with partitions: ['materialDemandId', 'pointInTime']
+2025-07-03 10:20:53,486 [INFO] ✅ Data write completed.
+2025-07-03 10:20:53,486 [INFO] Silver written for demand-topic
+2025-07-03 10:20:53,486 [INFO] ✨ Reading Silver layer for demand-topic
+2025-07-03 10:20:53,935 [INFO] 🔧 Starting transform_demand_gold...
+2025-07-03 10:20:54,054 [INFO] ⏳ Generating DimTime from pointInTime values...
+2025-07-03 10:20:54,738 [INFO] ✅ DimTime generated with 4 rows
+2025-07-03 10:20:54,738 [INFO] 📦 Merging Dimension table DimMaterial with SCD Type 2 logic.
+2025-07-03 10:20:54,738 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:20:54,786 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:20:54,787 [INFO] 📌 Change detection columns: ['MaterialDescription', 'MaterialGlobalAssetId', 'UnitOfMeasure', 'UnitOfMeasureIsOmitted']
+2025-07-03 10:20:54,804 [INFO] 🔁 MERGE condition: existing.MaterialNumberCustomer = incoming.MaterialNumberCustomer AND existing.MaterialNumberSupplier = incoming.MaterialNumberSupplier
+2025-07-03 10:20:57,526 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:20:57,527 [INFO] 📦 Merging Dimension table DimCustomer with SCD Type 2 logic.
+2025-07-03 10:20:57,527 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:20:57,553 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:20:57,553 [INFO] 📌 Change detection columns: []
+2025-07-03 10:20:57,562 [INFO] 🔁 MERGE condition: existing.CustomerBPNL = incoming.CustomerBPNL
+2025-07-03 10:21:00,141 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:21:00,142 [INFO] 📦 Merging Dimension table DimSupplier with SCD Type 2 logic.
+2025-07-03 10:21:00,142 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:21:00,174 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:21:00,175 [INFO] 📌 Change detection columns: []
+2025-07-03 10:21:00,187 [INFO] 🔁 MERGE condition: existing.SupplierBPNL = incoming.SupplierBPNL
+2025-07-03 10:21:02,722 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:21:02,722 [INFO] 📦 Merging Dimension table DimDemandCategory with SCD Type 2 logic.
+2025-07-03 10:21:02,722 [INFO] 🔑 Adding SCD Type 2 columns: SurrogateKey, ValidFrom, ValidTo, IsCurrent
+2025-07-03 10:21:02,754 [INFO] 📂 Found existing Delta table at /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:21:02,755 [INFO] 📌 Change detection columns: []
+2025-07-03 10:21:02,766 [INFO] 🔁 MERGE condition: existing.DemandCategoryCode = incoming.DemandCategoryCode
+2025-07-03 10:21:05,123 [INFO] ✅ SCD Type 2 merge complete for /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:21:05,123 [INFO] 💾 Writing Fact table: FactMaterialDemand
+2025-07-03 10:21:07,101 [INFO] 📦 Merging Dimension table DimTime with SCD Type 2 logic.
+2025-07-03 10:21:07,101 [WARNING] ⚠️ Unknown dimension DimTime. Skipping SCD merge.
+2025-07-03 10:21:07,101 [INFO] 💾 Writing Gold table: DimMaterial | Partitions: []
+2025-07-03 10:21:08,911 [INFO] ✅ Gold table DimMaterial written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimMaterial
+2025-07-03 10:21:09,711 [INFO] 
++--------------------+---------------------+----------------------+----------------------+-------------+----------------------+
+| MaterialDescription|MaterialGlobalAssetId|MaterialNumberCustomer|MaterialNumberSupplier|UnitOfMeasure|UnitOfMeasureIsOmitted|
++--------------------+---------------------+----------------------+----------------------+-------------+----------------------+
+|High performance ...| 987e6543-e21b-32d...|           ABC-123-XYZ|           SUP-987-PLM|   unit:piece|                 false|
+|High performance ...| 987e6543-e21b-32d...|           ABC-123-XYZ|           SUP-987-PLM|   unit:piece|                 false|
+|Windshield wiper ...|                 null|           DEF-456-UVW|                  null|         null|                  true|
+|Windshield wiper ...|                 null|           DEF-456-UVW|                  null|         null|                  true|
++--------------------+---------------------+----------------------+----------------------+-------------+----------------------+
+
+2025-07-03 10:21:09,711 [WARNING] ⚠️ Skipping partitioning for table with only partition columns: {'CustomerBPNL'}
+2025-07-03 10:21:09,711 [INFO] 💾 Writing Gold table: DimCustomer | Partitions: []
+2025-07-03 10:21:11,447 [INFO] ✅ Gold table DimCustomer written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimCustomer
+2025-07-03 10:21:12,233 [INFO] 
++----------------+
+|    CustomerBPNL|
++----------------+
+|BPNL1234567890LM|
+|BPNL1234567890XY|
++----------------+
+
+2025-07-03 10:21:12,233 [INFO] 💾 Writing Gold table: DimSupplier | Partitions: []
+2025-07-03 10:21:14,013 [INFO] ✅ Gold table DimSupplier written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimSupplier
+2025-07-03 10:21:14,788 [INFO] 
++----------------+
+|    SupplierBPNL|
++----------------+
+|BPNL0987654321ZW|
+|BPNL0987654321PQ|
++----------------+
+
+2025-07-03 10:21:14,788 [INFO] 💾 Writing Gold table: DimDemandCategory | Partitions: []
+2025-07-03 10:21:16,409 [INFO] ✅ Gold table DimDemandCategory written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimDemandCategory
+2025-07-03 10:21:17,205 [INFO] 
++------------------+
+|DemandCategoryCode|
++------------------+
+|              A1S1|
+|              0001|
++------------------+
+
+2025-07-03 10:21:17,205 [INFO] 💾 Writing Gold table: FactMaterialDemand | Partitions: ['ChangedAt', 'PointInTime', 'CustomerBPNL']
+2025-07-03 10:21:18,932 [INFO] ✅ Gold table FactMaterialDemand written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/FactMaterialDemand
+2025-07-03 10:21:19,784 [INFO] 
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+|           ChangedAt|    CustomerBPNL|DemandCategoryCode|            DemandID|DemandQuantity|MaterialDemandIsInactive|MaterialNumberCustomer|PointInTime|    SupplierBPNL|
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+|2025-07-03T12:34:56Z|BPNL1234567890XY|              0001|123e4567-e89b-12d...|       1500.75|                   false|           ABC-123-XYZ| 2025-07-07|BPNL0987654321ZW|
+|2025-07-03T12:34:56Z|BPNL1234567890XY|              0001|123e4567-e89b-12d...|        2000.5|                   false|           ABC-123-XYZ| 2025-07-14|BPNL0987654321ZW|
+|2025-07-02T08:15:30Z|BPNL1234567890LM|              A1S1|223e4567-e89b-12d...|         500.0|                    true|           DEF-456-UVW| 2025-08-04|BPNL0987654321PQ|
+|2025-07-02T08:15:30Z|BPNL1234567890LM|              A1S1|223e4567-e89b-12d...|        750.25|                    true|           DEF-456-UVW| 2025-08-11|BPNL0987654321PQ|
++--------------------+----------------+------------------+--------------------+--------------+------------------------+----------------------+-----------+----------------+
+
+2025-07-03 10:21:19,784 [INFO] 💾 Writing Gold table: DimTime | Partitions: []
+2025-07-03 10:21:24,123 [INFO] ✅ Gold table DimTime written to /home/rahul/DCMRealTimeTransactions/datalake/gold/demand/DimTime
+2025-07-03 10:21:24,985 [INFO] 
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+| DateKey|Day|DayOfWeek|  FullDate|IsWeekend|Month|MonthName|Quarter|WeekOfYear|Year|
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+|20250707|  7|        1|2025-07-07|    false|    7|     July|      3|        28|2025|
+|20250714| 14|        1|2025-07-14|    false|    7|     July|      3|        29|2025|
+|20250804|  4|        1|2025-08-04|    false|    8|   August|      3|        32|2025|
+|20250811| 11|        1|2025-08-11|    false|    8|   August|      3|        33|2025|
++--------+---+---------+----------+---------+-----+---------+-------+----------+----+
+

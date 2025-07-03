@@ -1,0 +1,367 @@
+2025-07-01 11:14:27,328 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 11:14:27,334 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Broker version identified as 2.6
+2025-07-01 11:14:27,334 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 11:14:27,334 [INFO] Updating subscribed topics to: ('comments-topic',)
+2025-07-01 11:14:27,334 [INFO] Consumer started on topic: comments-topic
+2025-07-01 11:14:27,335 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 11:14:27,336 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 11:14:27,336 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2025-07-01 11:14:28,454 [INFO] Coordinator for group/raw-file-dumper is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-07-01 11:14:28,455 [INFO] Discovered coordinator coordinator-1 for group raw-file-dumper
+2025-07-01 11:14:28,455 [INFO] Starting new heartbeat thread
+2025-07-01 11:14:28,455 [INFO] Revoking previously assigned partitions set() for group raw-file-dumper
+2025-07-01 11:14:28,455 [INFO] Failed to join group raw-file-dumper: NodeNotReadyError: coordinator-1
+2025-07-01 11:14:28,456 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 11:14:28,456 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 11:14:28,556 [INFO] (Re-)joining group raw-file-dumper
+2025-07-01 11:14:28,598 [INFO] Received member id kafka-python-2.2.14-afb4d2cb-83b5-4cab-a8d4-2fb41bb0d387 for group raw-file-dumper; will retry join-group
+2025-07-01 11:14:28,598 [INFO] Failed to join group raw-file-dumper: [Error 79] MemberIdRequiredError
+2025-07-01 11:14:28,598 [INFO] (Re-)joining group raw-file-dumper
+2025-07-01 11:14:31,631 [INFO] Successfully joined group raw-file-dumper <Generation 1 (member_id: kafka-python-2.2.14-afb4d2cb-83b5-4cab-a8d4-2fb41bb0d387, protocol: range)>
+2025-07-01 11:14:31,631 [INFO] Elected group leader -- performing partition assignments using range
+2025-07-01 11:14:31,670 [INFO] Updated partition assignment: [TopicPartition(topic='comments-topic', partition=0)]
+2025-07-01 11:14:31,671 [INFO] Setting newly assigned partitions {TopicPartition(topic='comments-topic', partition=0)} for group raw-file-dumper
+2025-07-01 11:14:31,686 [INFO] Resetting offset for partition TopicPartition(topic='comments-topic', partition=0) to offset 32.
+2025-07-01 11:14:55,939 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T111455_a80f1cebb60b45b383f8e0432e896a06.json
+2025-07-01 11:23:45,736 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T112345_2572e5334d434ae3aaf78c7cb8506bd7.json
+2025-07-01 11:47:20,571 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T114720_937d22c85df0433289736ca2ec9a3893.json
+2025-07-01 11:51:55,328 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T115155_7486683fdc5242339e6ec0eb512f894e.json
+2025-07-01 11:52:53,045 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T115253_48711f02f97f45dab9b9b3e87742f8e4.json
+2025-07-01 11:54:08,249 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T115408_2e21a029ce724c989e4d97b0f957c227.json
+2025-07-01 11:57:14,806 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T115714_bd73388179a445cf8109b9844077b085.json
+2025-07-01 12:00:33,461 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T120033_5b2333930cf943239dde115e4c8e28f5.json
+2025-07-01 12:02:19,514 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T120219_52f0f375bcdd4f4bae12875d08886933.json
+2025-07-01 12:04:21,413 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T120421_4d3ea050bf434857a90ce9de9f1eb23a.json
+2025-07-01 12:05:04,720 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T120504_593f9d8adabd4b2b88af0b38e26bcfc5.json
+2025-07-01 12:07:10,903 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T120710_3407799bbad94aefbe4540066f34659b.json
+2025-07-01 12:08:28,166 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T120828_3b6805487bf24e1eb6071ffb3d7c58a6.json
+2025-07-01 12:09:19,692 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T120919_53314857951b4ed29b50f3a4d98ce28e.json
+2025-07-01 12:14:49,561 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T121449_4bf808b3e6b248ddbaf010076766f4c1.json
+2025-07-01 12:16:47,066 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T121647_94d075ed6c164b378a1a6ab9f4a4c4d9.json
+2025-07-01 12:23:54,260 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T122354_2de5708574644af8a5dd808371f4805c.json
+2025-07-01 12:24:59,143 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T122459_56f3765da906459691d4bcfee21ce0a6.json
+2025-07-01 12:28:52,143 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T122852_89c237c6264f4ca49da120fcaab047f2.json
+2025-07-01 12:32:02,964 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T123202_077d1729e73046c4b7f4cbd17865c014.json
+2025-07-01 12:39:36,243 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T123936_c90664b0c6aa48e6be17235dfca24b77.json
+2025-07-01 12:39:44,958 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T123944_fbfbc40e79774711ade156ea6f08be50.json
+2025-07-01 12:43:09,648 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T124309_3ee599d09fe341479fb089ac02a4c92c.json
+2025-07-01 12:44:05,833 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T124405_cf61e103ccce490aa5e952b5f976dba5.json
+2025-07-01 12:58:58,431 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T125858_27e81124eac14a5492764d8cade21a01.json
+2025-07-01 13:15:02,571 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T131502_210cc9c2068549d694e69a7a691b5cf7.json
+2025-07-01 13:24:11,762 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T132411_113e67fca3d949d99028448517387524.json
+2025-07-01 13:24:36,909 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T132436_0765b4faaf9d4d10a7d8a9ebce5f4e5b.json
+2025-07-01 13:29:54,759 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T132954_f802850d8f6346cca3ed4622fcd68923.json
+2025-07-01 13:31:39,805 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T133139_1f7f9b3462a94e08a663c1fdd41a22ff.json
+2025-07-01 15:47:49,816 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T154749_0d28b59045334b62b448bc9d5720890b.json
+2025-07-01 15:49:19,761 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T154919_002250767c6d4fc8adf077861871333c.json
+2025-07-01 15:53:23,853 [INFO] Saved raw message: /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/20250701T155323_76161ccea2f9407f85bbf56319734dce.json
+2025-07-01 16:02:26,843 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 16:02:26,845 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Broker version identified as 2.6
+2025-07-01 16:02:26,845 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 16:02:26,846 [INFO] Updating subscribed topics to: ('comments-topic', 'demand-topic', 'capacity-topic')
+2025-07-01 16:02:26,846 [INFO] Consumer started. Subscribed to topics: comments-topic, demand-topic, capacity-topic
+2025-07-01 16:02:26,847 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 16:02:26,848 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 16:02:26,848 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2025-07-01 16:02:26,950 [INFO] Coordinator for group/raw-file-dumper is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-07-01 16:02:26,950 [INFO] Discovered coordinator coordinator-1 for group raw-file-dumper
+2025-07-01 16:02:26,951 [INFO] Starting new heartbeat thread
+2025-07-01 16:02:26,951 [INFO] Revoking previously assigned partitions set() for group raw-file-dumper
+2025-07-01 16:02:26,951 [INFO] Failed to join group raw-file-dumper: NodeNotReadyError: coordinator-1
+2025-07-01 16:02:26,952 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 16:02:26,952 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 16:02:27,052 [INFO] (Re-)joining group raw-file-dumper
+2025-07-01 16:02:27,067 [INFO] Received member id kafka-python-2.2.14-9493fc0a-a828-4c5a-85cd-fc7476f8ffd2 for group raw-file-dumper; will retry join-group
+2025-07-01 16:02:27,067 [INFO] Failed to join group raw-file-dumper: [Error 79] MemberIdRequiredError
+2025-07-01 16:02:27,067 [INFO] (Re-)joining group raw-file-dumper
+2025-07-01 16:02:32,381 [INFO] Successfully joined group raw-file-dumper <Generation 2 (member_id: kafka-python-2.2.14-9493fc0a-a828-4c5a-85cd-fc7476f8ffd2, protocol: range)>
+2025-07-01 16:02:32,381 [INFO] Elected group leader -- performing partition assignments using range
+2025-07-01 16:02:32,387 [INFO] Updated partition assignment: [TopicPartition(topic='capacity-topic', partition=0), TopicPartition(topic='comments-topic', partition=0), TopicPartition(topic='demand-topic', partition=0)]
+2025-07-01 16:02:32,387 [INFO] Setting newly assigned partitions {TopicPartition(topic='demand-topic', partition=0), TopicPartition(topic='capacity-topic', partition=0), TopicPartition(topic='comments-topic', partition=0)} for group raw-file-dumper
+2025-07-01 16:02:32,392 [INFO] Resetting offset for partition TopicPartition(topic='demand-topic', partition=0) to offset 5.
+2025-07-01 16:02:32,392 [INFO] Resetting offset for partition TopicPartition(topic='capacity-topic', partition=0) to offset 1.
+2025-07-01 16:02:53,712 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250701T160253_6dd92ef967c649bbae8910cbef0469d5.json
+2025-07-01 16:03:09,711 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T160309_f30ec774fc8b47e9a6dd246043cb1d58.json
+2025-07-01 16:03:20,988 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250701T160320_5c1f214186374c1f9f608d9719b07f29.json
+2025-07-01 16:14:14,783 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T161414_5ab785f638044a11a8577698da304ecd.json
+2025-07-01 16:17:41,757 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T161741_329cebda594341b08c86cdd44c385458.json
+2025-07-01 16:18:18,822 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T161818_43a55ef3a9404fc79b066b42c5674248.json
+2025-07-01 16:21:47,088 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T162147_abb2ba60c5334240a8ccb5e336934221.json
+2025-07-01 16:26:53,751 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250701T162653_05010c3d889845bc982db6c139a73a47.json
+2025-07-01 16:26:59,079 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250701T162659_2dc8346cd5f544438b1852989ded057a.json
+2025-07-01 18:06:34,412 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 18:06:34,415 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Broker version identified as 2.6
+2025-07-01 18:06:34,415 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 18:06:34,415 [INFO] Updating subscribed topics to: ('comments-topic', 'demand-topic', 'capacity-topic')
+2025-07-01 18:06:34,415 [INFO] Consumer started. Subscribed to topics: comments-topic, demand-topic, capacity-topic
+2025-07-01 18:06:34,416 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 18:06:34,417 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 18:06:34,417 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2025-07-01 18:06:34,523 [INFO] Coordinator for group/raw-file-dumper is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-07-01 18:06:34,523 [INFO] Discovered coordinator coordinator-1 for group raw-file-dumper
+2025-07-01 18:06:34,523 [INFO] Starting new heartbeat thread
+2025-07-01 18:06:34,524 [INFO] Revoking previously assigned partitions set() for group raw-file-dumper
+2025-07-01 18:06:34,524 [INFO] Failed to join group raw-file-dumper: NodeNotReadyError: coordinator-1
+2025-07-01 18:06:34,524 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-01 18:06:34,525 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-01 18:06:34,625 [INFO] (Re-)joining group raw-file-dumper
+2025-07-01 18:06:34,638 [INFO] Received member id kafka-python-2.2.14-17e9bd0d-61c3-4b98-87e8-68eed60639b9 for group raw-file-dumper; will retry join-group
+2025-07-01 18:06:34,638 [INFO] Failed to join group raw-file-dumper: [Error 79] MemberIdRequiredError
+2025-07-01 18:06:34,638 [INFO] (Re-)joining group raw-file-dumper
+2025-07-01 18:06:37,656 [INFO] Successfully joined group raw-file-dumper <Generation 4 (member_id: kafka-python-2.2.14-17e9bd0d-61c3-4b98-87e8-68eed60639b9, protocol: range)>
+2025-07-01 18:06:37,656 [INFO] Elected group leader -- performing partition assignments using range
+2025-07-01 18:06:37,662 [INFO] Updated partition assignment: [TopicPartition(topic='capacity-topic', partition=0), TopicPartition(topic='comments-topic', partition=0), TopicPartition(topic='demand-topic', partition=0)]
+2025-07-01 18:06:37,662 [INFO] Setting newly assigned partitions {TopicPartition(topic='capacity-topic', partition=0), TopicPartition(topic='demand-topic', partition=0), TopicPartition(topic='comments-topic', partition=0)} for group raw-file-dumper
+2025-07-01 18:07:25,745 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250701T180725_55843c8146b84df6a3d0322ab3b3f16c.json
+2025-07-01 18:07:43,521 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250701T180743_ed238b8225ec48e8a56bcaf3d695ba1d.json
+2025-07-01 18:07:47,989 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T180747_d14aae464fbd42f398d8ca7c852c15d0.json
+2025-07-01 18:14:52,935 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T181452_bb6b9b37f2354a2b9686e007c555d60b.json
+2025-07-01 18:16:43,907 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T181643_2111592ea59c477980f0d9f3802fb536.json
+2025-07-01 18:16:45,668 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T181645_cc0d3715388d44f08634605ee0a892a9.json
+2025-07-01 18:39:53,691 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T183953_18f1744a2b7a42b29e659467b831799a.json
+2025-07-01 18:40:23,652 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T184023_6b1c53bae8374ba5b596b1369020fdf9.json
+2025-07-01 18:41:44,889 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T184144_b8f6d7eb01a0471ea8dca79f0da0e72e.json
+2025-07-01 18:43:19,250 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T184319_221cd0ec305846378d6b5d5957601780.json
+2025-07-01 18:44:05,802 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T184405_a0fb5eb2d5504148bc3363f28806da75.json
+2025-07-01 18:44:58,993 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250701T184458_98f8171dcc78427ab95e435e2bbcd89e.json
+2025-07-01 18:45:24,042 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250701T184524_41c75c434d9e4b59a4124f11d5b8666c.json
+2025-07-01 19:11:55,019 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250701T191155_90841e66419f41fa9b3ce58745658efe.json
+2025-07-01 19:12:00,497 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250701T191200_85bfa1ca1a0f4b5b81b357b304945786.json
+2025-07-01 19:12:16,687 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250701T191216_ced220c6d67f485db90b2255d0c2ef29.json
+2025-07-02 10:08:19,105 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-02 10:08:19,114 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Broker version identified as 2.6
+2025-07-02 10:08:19,115 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-02 10:08:19,115 [INFO] Updating subscribed topics to: ('comments-topic', 'demand-topic', 'capacity-topic')
+2025-07-02 10:08:19,115 [INFO] Consumer started. Subscribed to topics: comments-topic, demand-topic, capacity-topic
+2025-07-02 10:08:19,118 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-02 10:08:19,119 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-02 10:08:19,119 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2025-07-02 10:08:19,228 [INFO] Coordinator for group/raw-file-dumper is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-07-02 10:08:19,228 [INFO] Discovered coordinator coordinator-1 for group raw-file-dumper
+2025-07-02 10:08:19,228 [INFO] Starting new heartbeat thread
+2025-07-02 10:08:19,229 [INFO] Revoking previously assigned partitions set() for group raw-file-dumper
+2025-07-02 10:08:19,229 [INFO] Failed to join group raw-file-dumper: NodeNotReadyError: coordinator-1
+2025-07-02 10:08:19,230 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-02 10:08:19,231 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-02 10:08:19,332 [INFO] (Re-)joining group raw-file-dumper
+2025-07-02 10:08:19,352 [INFO] Received member id kafka-python-2.2.14-5263f9ef-f36e-43ad-9c98-c043b8368129 for group raw-file-dumper; will retry join-group
+2025-07-02 10:08:19,352 [INFO] Failed to join group raw-file-dumper: [Error 79] MemberIdRequiredError
+2025-07-02 10:08:19,353 [INFO] (Re-)joining group raw-file-dumper
+2025-07-02 10:08:22,867 [INFO] Successfully joined group raw-file-dumper <Generation 6 (member_id: kafka-python-2.2.14-5263f9ef-f36e-43ad-9c98-c043b8368129, protocol: range)>
+2025-07-02 10:08:22,867 [INFO] Elected group leader -- performing partition assignments using range
+2025-07-02 10:08:22,883 [INFO] Updated partition assignment: [TopicPartition(topic='capacity-topic', partition=0), TopicPartition(topic='comments-topic', partition=0), TopicPartition(topic='demand-topic', partition=0)]
+2025-07-02 10:08:22,883 [INFO] Setting newly assigned partitions {TopicPartition(topic='demand-topic', partition=0), TopicPartition(topic='capacity-topic', partition=0), TopicPartition(topic='comments-topic', partition=0)} for group raw-file-dumper
+2025-07-02 10:09:26,740 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250702T100926_83c1c470917f495e97140147e174ec15.json
+2025-07-02 10:10:07,056 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T101007_86fa6ad3641f4cc0a8f08b5d03e50fda.json
+2025-07-02 10:10:34,985 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T101034_26befb4c23ca4bf0bd69a15392ddaf21.json
+2025-07-02 10:10:34,986 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T101034_b02aa61b415d4ec9829a60ce63768ec8.json
+2025-07-02 10:42:12,236 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250702T104212_dad2fe551e4a4ae782ae9fc033d6fe14.json
+2025-07-02 10:45:50,943 [INFO] [comments-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/comments-topic/20250702T104550_8eb91fc5eb144777ae3226365e04d5ec.json
+2025-07-02 10:48:18,827 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T104818_03cb72eb6fa14e5e9b098d8a617ec75e.json
+2025-07-02 10:55:35,818 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T105535_e42b0f296a8c4882b149f7ececb8cc88.json
+2025-07-02 11:01:01,240 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T110101_50e94786bfb749f699c8c980dfd1b097.json
+2025-07-02 11:01:01,241 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T110101_b4ef00a943a74bc3b4b747eb3447e5cb.json
+2025-07-02 11:09:57,245 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T110957_f062cacdd9684a70abe2ae4cd4db7f7b.json
+2025-07-02 11:09:57,246 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T110957_558b8bd21142403988000c0916180dd0.json
+2025-07-02 11:13:25,365 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T111325_d7b567923964473daa850665ab67d901.json
+2025-07-02 11:13:25,366 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T111325_2a6aeeb2f2d442429a24f1dfe0092058.json
+2025-07-02 11:16:01,079 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T111601_a2365aafa43b41ad886cb29ceafccdcf.json
+2025-07-02 11:37:38,455 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T113738_8537021c3fd04226a662bba55ad91898.json
+2025-07-02 11:40:13,878 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T114013_f920e1ce9dc544e491a05f2dc592bb5b.json
+2025-07-02 11:41:55,556 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T114155_3e6d234a7deb457d84d5a87876a33fa3.json
+2025-07-02 13:09:38,645 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T130938_4d48d54405804792a9a00274c442ef47.json
+2025-07-02 13:15:43,253 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T131543_e7d39ff428e4410dbfe249230fdc317d.json
+2025-07-02 13:15:43,254 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T131543_c12acdd705164e00ba89ba237792f26a.json
+2025-07-02 16:21:55,004 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T162154_6d18481ab79643d8bd7e6fbd186036c9.json
+2025-07-02 16:21:55,008 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T162155_c059bc510aa141e5a0857eee13b9ec53.json
+2025-07-02 16:40:47,636 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T164047_7e4e6bbc99504ce298ee3d8c6ae702c4.json
+2025-07-02 16:40:47,637 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T164047_cf1bba1990f44b71bd852336c825a9a2.json
+2025-07-02 16:50:52,747 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T165052_d331442b9a0045ddb28908317bd8f0a5.json
+2025-07-02 16:53:33,433 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T165333_6af11de722934c368508334402391ddd.json
+2025-07-02 17:11:06,977 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T171106_84b9e43dbbf54912ac8a12323049e179.json
+2025-07-02 17:13:12,535 [INFO] [capacity-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/capacity-topic/20250702T171312_31cfdb1aede74fe68759ba096fc5a555.json
+2025-07-02 17:14:47,277 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T171447_e8b3b5fa246a417bb38559ff793d4449.json
+2025-07-02 17:14:47,278 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T171447_a177f8ad5af443d480308b11c7a39550.json
+2025-07-02 17:17:33,623 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T171733_66c33c1f70e546ec9738627282e32655.json
+2025-07-02 17:17:33,624 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T171733_7e6d73a64e3a4596b2a19e1dd42a95c2.json
+2025-07-02 17:23:42,521 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T172342_b1a43df8104b42eaa2e7494d4f28769a.json
+2025-07-02 17:31:21,880 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T173121_1c8b079ea654404b8588bc38f1acb4d7.json
+2025-07-02 17:31:48,352 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T173148_62cf2eb3f1c64007bc67edf15c7f6da5.json
+2025-07-02 17:37:40,377 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T173740_8f7ba1c6b95f4eccad7af5c7061d2fa5.json
+2025-07-02 17:39:40,587 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T173940_044f592ae46c4c58b9a4d8e37a8efa7e.json
+2025-07-02 17:39:48,130 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_consumer/raw_kafka_data/demand-topic/20250702T173948_055a656f90bc446599767180a2c161fb.json
+2025-07-02 17:42:23,658 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-02 17:42:23,661 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Broker version identified as 2.6
+2025-07-02 17:42:23,661 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-02 17:42:23,662 [INFO] Updating subscribed topics to: ('comments-topic', 'demand-topic', 'capacity-topic')
+2025-07-02 17:42:23,662 [INFO] Consumer started. Subscribed to topics: comments-topic, demand-topic, capacity-topic
+2025-07-02 17:42:23,664 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-02 17:42:23,664 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-02 17:42:23,664 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2025-07-02 17:42:23,778 [INFO] Coordinator for group/raw-file-dumper is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-07-02 17:42:23,778 [INFO] Discovered coordinator coordinator-1 for group raw-file-dumper
+2025-07-02 17:42:23,778 [INFO] Starting new heartbeat thread
+2025-07-02 17:42:23,779 [INFO] Revoking previously assigned partitions set() for group raw-file-dumper
+2025-07-02 17:42:23,779 [INFO] Failed to join group raw-file-dumper: NodeNotReadyError: coordinator-1
+2025-07-02 17:42:23,780 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-02 17:42:23,780 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-02 17:42:23,880 [INFO] (Re-)joining group raw-file-dumper
+2025-07-02 17:42:23,899 [INFO] Received member id kafka-python-2.2.14-4205cc69-e079-4ec7-a8fb-87e0068d7466 for group raw-file-dumper; will retry join-group
+2025-07-02 17:42:23,899 [INFO] Failed to join group raw-file-dumper: [Error 79] MemberIdRequiredError
+2025-07-02 17:42:23,899 [INFO] (Re-)joining group raw-file-dumper
+2025-07-02 17:42:27,494 [INFO] Successfully joined group raw-file-dumper <Generation 7 (member_id: kafka-python-2.2.14-4205cc69-e079-4ec7-a8fb-87e0068d7466, protocol: range)>
+2025-07-02 17:42:27,494 [INFO] Elected group leader -- performing partition assignments using range
+2025-07-02 17:42:27,511 [INFO] Updated partition assignment: [TopicPartition(topic='capacity-topic', partition=0), TopicPartition(topic='comments-topic', partition=0), TopicPartition(topic='demand-topic', partition=0)]
+2025-07-02 17:42:27,512 [INFO] Setting newly assigned partitions {TopicPartition(topic='comments-topic', partition=0), TopicPartition(topic='demand-topic', partition=0), TopicPartition(topic='capacity-topic', partition=0)} for group raw-file-dumper
+2025-07-02 17:45:13,834 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T174513_594870529cd541e9bd2596aa890e777d.json
+2025-07-02 17:48:50,191 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T174850_5cfba378ceba4f61bc29b896031478d4.json
+2025-07-02 17:49:53,862 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T174953_5433e38e9fef47d4b146b485978ececc.json
+2025-07-02 18:00:51,867 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T180051_8a7d0ca644b34243b5c2c9e2f610b494.json
+2025-07-02 18:25:52,731 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T182552_99b1274cb33a4c32846388b5d9444c56.json
+2025-07-02 18:32:22,264 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T183222_ae0f0270e6474808a883afe6362cca54.json
+2025-07-02 18:36:18,014 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T183618_88dc1e3d81bf4c77bdc1d7142de51c07.json
+2025-07-02 18:38:23,107 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T183823_6bbca3581fb2466886fd9de20a92b436.json
+2025-07-02 18:41:19,581 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T184119_165d899756e143d2bae2e17a70c5ae58.json
+2025-07-02 18:43:44,653 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T184344_b634c3792cfa4bf394dad1891a80e0ce.json
+2025-07-02 18:45:23,767 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T184523_d489b90a257540e789904aa6ca8193e7.json
+2025-07-02 18:46:38,646 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T184638_164f463585b34b1194d5d135956f086c.json
+2025-07-02 18:58:02,556 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T185802_9b8672b840e345789123e2117ca63103.json
+2025-07-02 19:01:35,533 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T190135_b99ef78b1de84a8bab3fce3dd75bbeec.json
+2025-07-02 19:05:13,076 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T190513_77f858334860446ea2fad97c4fdebc18.json
+2025-07-02 19:07:44,081 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T190744_a0518fb0eea24f43b15b89abab5e4f22.json
+2025-07-02 19:09:46,277 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T190946_8d4dfa5254f94bf5b482177b7ad3e877.json
+2025-07-02 19:16:58,740 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T191658_3a1384f6aeee43fea1a30aa6007c4d02.json
+2025-07-02 19:22:17,461 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T192217_93362d34f5494b0199f66a6ca6b80726.json
+2025-07-02 19:33:41,362 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T193341_dbf47567db77476d94d37524faba5f76.json
+2025-07-02 19:41:28,035 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T194128_c32bef7487634e80bb6f793a9ba48322.json
+2025-07-02 19:44:28,887 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T194428_c5c97a0cd2fd4b7e9b09e5fb2873c230.json
+2025-07-02 19:49:52,141 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T194952_b9fb0fba42da4560a04dda94f2346069.json
+2025-07-02 19:57:09,972 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T195709_665c2de59be24d42b9b3829161edd2d8.json
+2025-07-02 20:08:23,795 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T200823_d8b294071ce543d7ac337ebcad67bacd.json
+2025-07-02 20:10:26,738 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T201026_250be728b5c84ffa9ed6df9b5fbac041.json
+2025-07-02 20:12:07,560 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T201207_1a37c498e19f43e3a4c022a3dba0d017.json
+2025-07-02 20:25:41,013 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T202541_5540d8c000454b7189e0a63e6f2ef95b.json
+2025-07-02 20:34:04,757 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T203404_bec82344936a4df38e5dd94c7a39521c.json
+2025-07-02 20:38:02,231 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T203802_6960ab5f47cb477e9fcddb29d37972a2.json
+2025-07-02 20:39:37,006 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T203937_9fd78b88fdc14578881558dbdf4fff59.json
+2025-07-02 20:42:34,682 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T204234_52734380226d49e3af759294822f862e.json
+2025-07-02 20:44:54,058 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T204454_341b0d6b4dda446c97e87dd1d5404aee.json
+2025-07-02 20:47:51,597 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T204751_88ea34bff9df4a11acd5fb48449e3464.json
+2025-07-02 20:49:20,515 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T204920_c869499dedfb48faaa7f794e30489317.json
+2025-07-02 20:51:15,030 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T205115_638221d18cd84cdc816cd1f760483ce3.json
+2025-07-02 21:02:24,007 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T210224_dab81c3df60249178245e5a809b2a97f.json
+2025-07-02 21:04:24,358 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T210424_8cde22924b5146d88ffcc9f51978cf8a.json
+2025-07-02 21:11:56,488 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T211156_98f755d163454a0396158db43c370d73.json
+2025-07-02 21:15:02,735 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250702T211502_4a948891991f4b89840d01bc09749584.json
+2025-07-02 22:17:33,627 [INFO] Closing idle connection coordinator-1, last active 3601025 ms ago
+2025-07-02 22:17:33,639 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2025-07-02 22:17:33,669 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-02 22:17:33,681 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-02 22:17:33,685 [WARNING] Heartbeat session expired, marking coordinator dead
+2025-07-02 22:17:33,687 [WARNING] Marking the coordinator dead (node coordinator-1) for group raw-file-dumper: Heartbeat session expired.
+2025-07-02 22:17:33,701 [INFO] Coordinator for group/raw-file-dumper is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-07-02 22:17:33,702 [INFO] Discovered coordinator coordinator-1 for group raw-file-dumper
+2025-07-03 07:30:27,411 [INFO] Closing idle connection coordinator-1, last active 33161664 ms ago
+2025-07-03 07:30:27,426 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2025-07-03 07:30:27,427 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-03 07:30:27,428 [INFO] <BrokerConnection client_id=kafka-python-2.2.14, node_id=coordinator-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-03 07:30:27,428 [WARNING] Heartbeat session expired, marking coordinator dead
+2025-07-03 07:30:27,428 [WARNING] Marking the coordinator dead (node coordinator-1) for group raw-file-dumper: Heartbeat session expired.
+2025-07-03 07:30:27,430 [INFO] Coordinator for group/raw-file-dumper is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-07-03 07:30:27,431 [INFO] Discovered coordinator coordinator-1 for group raw-file-dumper
+2025-07-03 07:33:55,934 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T073355_af5894f57c744e70977e7c84dfd0bc59.json
+2025-07-03 07:35:44,573 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T073544_0bc1688202ac4296a0245fce7e9a1b6d.json
+2025-07-03 07:42:26,204 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T074226_f0750dc98bc94570ab6bfb9ca49da54b.json
+2025-07-03 07:44:10,355 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T074410_45e5513ed71e464eb6e6c441a86c3a0e.json
+2025-07-03 07:46:02,084 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T074602_b304f186240d456caedd7193f5b7533d.json
+2025-07-03 07:49:53,250 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T074953_a12ca19094594136a90b0820159c96a9.json
+2025-07-03 07:51:58,885 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T075158_c1399fd4e1894859a17c094e9cb7ec39.json
+2025-07-03 07:54:11,228 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T075411_07d9189ea6be4d4485eebf49af1ce2e9.json
+2025-07-03 07:57:11,749 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T075711_11c40f3af0ec4bd184c37d3cda9ba182.json
+2025-07-03 08:08:46,311 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T080846_e930f28faf8e4cd99793ab9de346682a.json
+2025-07-03 08:11:33,097 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T081133_88953157c537432986d5f2e12e14f4e1.json
+2025-07-03 08:14:33,399 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T081433_86c10cf7281b41969b19d9c677694652.json
+2025-07-03 08:18:14,422 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T081814_c6f348d70e18448687f392ffbf31d6a4.json
+2025-07-03 08:19:58,341 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T081958_ce8e8cda981b4c3ba5d576a2cf510e82.json
+2025-07-03 08:20:56,581 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T082056_d6d6101558d7425a89abb3309bddfb61.json
+2025-07-03 08:23:29,044 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T082329_2cc0f7d61b154462a2503089e741006a.json
+2025-07-03 08:24:11,708 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T082411_2e0a0249e5b04a9e9197e629d4a0c7ef.json
+2025-07-03 08:25:24,901 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T082524_3df2850807ef42ea8b858bb5b86c381d.json
+2025-07-03 08:27:12,737 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T082712_79cce5580aff499497d7d284083961eb.json
+2025-07-03 08:27:54,827 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T082754_28778337f9b241a2bca0b194cafe51c9.json
+2025-07-03 08:30:48,836 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T083048_d5e1a992fb93480187ffd164e25afb28.json
+2025-07-03 08:30:48,836 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T083048_5ea0f64a7e4748fc937ab72d428f9e34.json
+2025-07-03 08:33:30,071 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T083330_376198c03a114ea8997e6a2e745e89f6.json
+2025-07-03 08:33:30,071 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T083330_8c9e21b7eabc49548ed8b36b74092eef.json
+2025-07-03 08:33:30,072 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T083330_d83205c60b8e4d6c95e27ff30019065f.json
+2025-07-03 08:33:30,072 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T083330_93a04ca38bc54d27a893a10b27af7b1f.json
+2025-07-03 08:33:30,072 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T083330_b0b0862613524b05b4b8d9407f35b4e4.json
+2025-07-03 08:41:05,881 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T084105_a29bba9285d641e0bd588f3afef26795.json
+2025-07-03 08:54:23,208 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085423_89a4282f5d6a4918867a75bf76af49aa.json
+2025-07-03 08:54:23,209 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085423_6ffc9540c8f54b2d93af65db0ab4a5ac.json
+2025-07-03 08:54:23,209 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085423_0d3618d9a50a4054b825cb30bde47fba.json
+2025-07-03 08:54:23,210 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085423_3e8d380db28548c1a72c34e83e66b906.json
+2025-07-03 08:54:23,211 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085423_924ef2b3a18a4014b1d85c8249fd39a9.json
+2025-07-03 08:55:59,784 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085559_8c417dd1a0b44e7398a3195f4e5c9e3b.json
+2025-07-03 08:55:59,784 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085559_711b0351330e440ebbfb10ca838fd204.json
+2025-07-03 08:55:59,784 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085559_2996aefa34d248d4a4d037ab6b9bb0b5.json
+2025-07-03 08:55:59,784 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085559_0663411c038d4e23b12638e76cbb9db2.json
+2025-07-03 08:55:59,785 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085559_ae29803f3f77453ebac33ab344959c4f.json
+2025-07-03 08:57:58,622 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085758_9ff63d3883ca47f590f17c50dc293840.json
+2025-07-03 08:57:58,623 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085758_feb57ea8adaa4c36b2d53b411f2ad9ce.json
+2025-07-03 08:57:58,623 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085758_9c25d5f6df7d41708314d7555adbddd7.json
+2025-07-03 08:57:58,623 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085758_078c21aeaeaf471db26813d56af5ba93.json
+2025-07-03 08:57:58,624 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T085758_1c979515c33048929926516632cb024b.json
+2025-07-03 09:03:01,543 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090301_4a4d0dcf583849a18c6a8e30aa21ec6b.json
+2025-07-03 09:03:01,543 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090301_fd0b39a216ce45a49586f65355f70e38.json
+2025-07-03 09:03:01,544 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090301_1061e8119b094925be7842ab2165962d.json
+2025-07-03 09:03:01,544 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090301_f04a3566da1b4ce5b3b65a03e5ab701c.json
+2025-07-03 09:03:01,544 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090301_574eb9980d7043a9b088b744e45b3ad8.json
+2025-07-03 09:03:46,041 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090346_90fece42907a40fa9837fb0a0c77eaa2.json
+2025-07-03 09:03:46,041 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090346_cea48d2f04de4a20bf707e759f2dc414.json
+2025-07-03 09:04:59,748 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090459_f347b48c520a4d008476877d6e09d59b.json
+2025-07-03 09:04:59,748 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090459_40da6b3bf2164352aabb1c0396c62f6e.json
+2025-07-03 09:04:59,749 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090459_ac2da37fb77a497a984cd8b0f1dd82e7.json
+2025-07-03 09:04:59,749 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090459_e2049d99b4884a7f88735d9a3c672200.json
+2025-07-03 09:04:59,749 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T090459_f0945cc64b1e4d7aa8fea4f572f27cff.json
+2025-07-03 09:11:32,156 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T091132_7201f699fa7d42dd8aa2b4bf75b86f3c.json
+2025-07-03 09:11:32,157 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T091132_6745dd0269c64ebc9934c1abb450158d.json
+2025-07-03 09:15:42,227 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T091542_cfe452334bf74e8f934ab65ff0f8fd8c.json
+2025-07-03 09:15:42,228 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T091542_ea576c9811d34a1da6276df7768f501c.json
+2025-07-03 09:18:18,687 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T091818_7d14e1e91d0942b8b69fea7b577e2574.json
+2025-07-03 09:18:18,688 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T091818_e2587f49f730426683f9c9a1d4c7217b.json
+2025-07-03 09:20:21,726 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T092021_85a5a6b2d2704cb7b8376efc84e9ca80.json
+2025-07-03 09:20:21,726 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T092021_9bb9d9406d7040fdac48e8ede19f4c09.json
+2025-07-03 09:21:40,248 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T092140_5a8629e687e1472aace1b4340ded09dc.json
+2025-07-03 09:21:40,248 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T092140_f0a534ddd33648e58380dc74f3233c46.json
+2025-07-03 09:35:18,445 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T093518_51f14316d34a497698f0ef77a098b0a7.json
+2025-07-03 09:35:18,446 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T093518_a9bfb825d01541b280a58e547cbd38e0.json
+2025-07-03 09:37:31,468 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T093731_58bade97e8564a5f9e0b410d276617db.json
+2025-07-03 09:37:31,468 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T093731_6128dea9898b4ce586d883f24e62882c.json
+2025-07-03 09:40:20,247 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T094020_16e36be89a9e4767bfd52013d82b4d6b.json
+2025-07-03 09:40:20,248 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T094020_cab3620d83804db28e02e954c7d7528e.json
+2025-07-03 09:45:56,378 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T094556_e4da94b62bd44a82a180bd0b89a0eb5c.json
+2025-07-03 09:45:56,378 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T094556_a00b667c0c564693bb8685106fd87924.json
+2025-07-03 09:51:46,445 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T095146_c3250da93ca540be8b10cc5409301d95.json
+2025-07-03 09:51:46,446 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T095146_f83d937e4a164f2381803182e1ad15dc.json
+2025-07-03 09:56:36,640 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T095636_3e1f4bc3008c40619774a6f6d13740cb.json
+2025-07-03 09:56:36,641 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T095636_8fbc7dfe00ee4ab2b89eb07da1e3c086.json
+2025-07-03 10:05:11,483 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T100511_78a1eb7811884e5da7c98f92f1e0aa6a.json
+2025-07-03 10:05:11,483 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T100511_51a7107b31094c54960c8b2c0364169e.json
+2025-07-03 10:09:04,039 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T100904_5e8a6a74a6684212a1f82a1d40bd020c.json
+2025-07-03 10:09:04,039 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T100904_dc24b0de10c34fc28afdfc05df42b926.json
+2025-07-03 10:11:47,106 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101147_fbfb4ea892e8464eb73904273b76356f.json
+2025-07-03 10:11:47,107 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101147_784a0c28db894d7fb47cd7b09f725034.json
+2025-07-03 10:13:01,551 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101301_d3cb73d514364368b07debd751579f6d.json
+2025-07-03 10:13:01,552 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101301_d42f539573904fa597fdc01760b2237c.json
+2025-07-03 10:16:09,268 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101609_331558dcac2749899fa6875b81094a7f.json
+2025-07-03 10:16:09,268 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101609_f225dc93a8f8478cac588b3e48994620.json
+2025-07-03 10:18:05,130 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101805_dcc32b96fe044afd9f074947ca027c94.json
+2025-07-03 10:18:05,130 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101805_9756436749cb4990bb62ca919d307f02.json
+2025-07-03 10:19:44,463 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101944_1fec4b32fc5c48e8927c8b19299ff2e7.json
+2025-07-03 10:19:44,463 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101944_4b2ab3b1cb554ceaaed104a86716ef85.json
+2025-07-03 10:19:44,464 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101944_cb3c24ea29024570bb9879da27dfcf8c.json
+2025-07-03 10:19:44,464 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101944_a3ab6e74cd674184aec46a701bb27619.json
+2025-07-03 10:19:44,464 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T101944_d2f6e41bd2144a23aec773e0e2f742cc.json
+2025-07-03 10:20:46,349 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T102046_13eb5a066bb648f481c2f80943f52cfa.json
+2025-07-03 10:20:46,350 [INFO] [demand-topic] Message saved to /home/rahul/DCMRealTimeTransactions/raw_data/raw_kafka_data/demand-topic/20250703T102046_715e19fb8d02471c87f255b9da711441.json

@@ -1,0 +1,28 @@
+{
+  "materialDemandId": "223e4567-e89b-12d3-a456-426614174111",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNS0987654321EF",
+      "demandCategory": {
+        "demandCategoryCode": "A1S1"
+      },
+      "demands": [
+        {
+          "demand": 500.0,
+          "pointInTime": "2025-08-04"
+        },
+        {
+          "demand": 750.25,
+          "pointInTime": "2025-08-11"
+        }
+      ]
+    }
+  ],
+  "customer": "BPNL1234567890LM",
+  "supplier": "BPNL0987654321PQ",
+  "materialNumberCustomer": "DEF-456-UVW",
+  "materialDescriptionCustomer": "Windshield wiper blade",
+  "changedAt": "2025-07-02T08:15:30Z",
+  "unitOfMeasureIsOmitted": true,
+  "materialDemandIsInactive": true
+}

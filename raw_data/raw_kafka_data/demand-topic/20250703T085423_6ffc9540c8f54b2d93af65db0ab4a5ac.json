@@ -1,0 +1,36 @@
+{
+  "materialDemandId": "72d7ed90-bf51-4550-8eed-8bc67c94f3de",
+  "demandSeries": [
+    {
+      "customerLocation": "BPNS8RBPLMMYWLCN",
+      "demandCategory": {
+        "demandCategoryCode": "OS01"
+      },
+      "demands": [
+        {
+          "demand": 4264.763,
+          "pointInTime": "2026-01-14"
+        },
+        {
+          "demand": 4941.611,
+          "pointInTime": "2026-02-25"
+        },
+        {
+          "demand": 471.174,
+          "pointInTime": "2025-09-14"
+        }
+      ],
+      "expectedSupplierLocation": "BPNSR7D7KSGV6DXB"
+    }
+  ],
+  "customer": "BPNLGEDZSIW49PHS",
+  "supplier": "BPNLXJH3NKP4YL4L",
+  "unitOfMeasure": "unit:kilogram",
+  "materialNumberCustomer": "O7A6SZAQLUEG",
+  "materialNumberSupplier": "5SB-364W68-B",
+  "materialDescriptionCustomer": "Engine oil filter",
+  "changedAt": "2025-07-03T08:32:36Z",
+  "materialGlobalAssetId": "8c2ad07a-b66d-45e2-842c-79e3a17e34f2",
+  "unitOfMeasureIsOmitted": true,
+  "materialDemandIsInactive": false
+}

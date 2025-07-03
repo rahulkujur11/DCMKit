@@ -1,0 +1,100 @@
+2025-07-01 13:24:27,669 [INFO] === Spark Session started ===
+2025-07-01 13:24:27,670 [INFO] Initializing Kafka stream read
+2025-07-01 13:24:30,292 [INFO] Kafka stream initialized and subscribed to 'comments-topic'
+2025-07-01 13:24:30,292 [INFO] Starting the streaming query...
+2025-07-01 13:24:30,337 [INFO] Callback Server Starting
+2025-07-01 13:24:30,337 [INFO] Socket listening on ('127.0.0.1', 34947)
+2025-07-01 13:24:30,636 [INFO] Streaming query started and running
+2025-07-01 13:24:38,217 [INFO] Python Server ready to receive messages
+2025-07-01 13:24:38,217 [INFO] Received command c on object id p0
+2025-07-01 13:24:38,221 [INFO] Processing batch 42
+2025-07-01 13:24:38,221 [INFO] Starting to parse Kafka batch
+2025-07-01 13:24:44,208 [INFO] Parsed DataFrame with 1 rows
+2025-07-01 13:24:44,919 [INFO] Collected 1 rows for transformation
+2025-07-01 13:24:44,919 [INFO] Transformed payload: {'FolderIds': ['6824782f20ad2c37003c6ee2'], 'TenantId': '6271', 'Title': 'information', 'Body': 'Hello, this is a comment 3!', 'Tags': [{'Type': 'member', 'Name': 'supplier', 'Display': 'BPNL6666666666YY'}, {'Type': 'member', 'Name': 'author', 'Display': 'someone@company.com'}, {'Type': 'member', 'Name': 'commentId', 'Display': 'f5c151e4-30b5-4456-94fd-2a7b559b6121'}, {'Type': 'member', 'Name': 'customer', 'Display': 'BPNL8888888888XX'}]}
+2025-07-01 13:24:44,919 [INFO] Sending 1 transformed payloads
+2025-07-01 13:24:44,919 [INFO] Preparing to send 1 payloads in chunks
+2025-07-01 13:24:44,919 [INFO] Chunking payloads into size 100
+2025-07-01 13:24:44,919 [INFO] Sending chunk 1
+2025-07-01 13:24:44,919 [INFO] [{'FolderIds': ['6824782f20ad2c37003c6ee2'], 'TenantId': '6271', 'Title': 'information', 'Body': 'Hello, this is a comment 3!', 'Tags': [{'Type': 'member', 'Name': 'supplier', 'Display': 'BPNL6666666666YY'}, {'Type': 'member', 'Name': 'author', 'Display': 'someone@company.com'}, {'Type': 'member', 'Name': 'commentId', 'Display': 'f5c151e4-30b5-4456-94fd-2a7b559b6121'}, {'Type': 'member', 'Name': 'customer', 'Display': 'BPNL8888888888XX'}]}]
+2025-07-01 13:24:45,943 [INFO] Batch successfully sent to API.
+2025-07-01 13:29:25,940 [INFO] Error while receiving.
+Traceback (most recent call last):
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=3>
+2025-07-01 13:29:25,944 [INFO] Closing down clientserver connection
+2025-07-01 13:29:25,944 [ERROR] Exception while sending command.
+Traceback (most recent call last):
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-07-01 13:29:25,946 [INFO] Error while receiving.
+Traceback (most recent call last):
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/pyspark.zip/pyspark/context.py", line 377, in signal_handler
+    self.cancelAllJobs()
+  File "/home/rahul/spark-3.4.1/python/lib/pyspark.zip/pyspark/context.py", line 2255, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 169, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o18.sc
+2025-07-01 13:29:25,947 [INFO] Closing down clientserver connection
+2025-07-01 13:29:25,947 [ERROR] Exception while sending command.
+Traceback (most recent call last):
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/pyspark.zip/pyspark/context.py", line 377, in signal_handler
+    self.cancelAllJobs()
+  File "/home/rahul/spark-3.4.1/python/lib/pyspark.zip/pyspark/context.py", line 2255, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 169, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o18.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahul/spark-3.4.1/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-07-01 13:29:25,948 [INFO] Closing down clientserver connection
+2025-07-01 13:29:25,950 [INFO] Closing down clientserver connection
